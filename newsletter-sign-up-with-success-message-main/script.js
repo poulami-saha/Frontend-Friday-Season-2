@@ -26,6 +26,7 @@ emailInput.addEventListener("input", () => {
 });
 
 emailInput.addEventListener("blur", () => {
+  const email = emailInput.value.trim();
   if (!isValidEmail(email)) {
     showErrorClasses();
   } else {
@@ -36,6 +37,8 @@ emailInput.addEventListener("blur", () => {
 form.addEventListener("submit", (event) => {
   event.preventDefault();
   const email = emailInput.value.trim();
-  localStorage.setItem("email", email);
-  window.location.href = "confirm.html";
+  if (isValidEmail(email)) {
+    localStorage.setItem("email", email);
+    window.location.href = "confirm.html";
+  }
 });
