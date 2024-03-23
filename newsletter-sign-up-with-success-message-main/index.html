@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link href="style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body class="mainBody">
+    <div class="container">
+      <img
+        src="./assets/images/illustration-sign-up-mobile.svg"
+        class="img-mobile"
+      />
+      <img
+        src="./assets/images/illustration-sign-up-desktop.svg"
+        class="img-desktop"
+      />
+      <div class="content">
+        <p class="header">Stay updated!</p>
+        <p class="message">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+        <ul>
+          <li class="option">
+            <img class="smallCheck" src="./assets/images/icon-list.svg" />
+            <p class="optionText">
+              Product discovery and building what matters
+            </p>
+          </li>
+          <li class="option">
+            <img class="smallCheck" src="./assets/images/icon-list.svg" />
+            <p class="optionText">Measuring to ensure updates are a success</p>
+          </li>
+          <li class="option">
+            <img class="smallCheck" src="./assets/images/icon-list.svg" />
+            <p class="optionText">And much more!</p>
+          </li>
+        </ul>
+        <form class="form" id="signUpForm">
+          <div class="formRow">
+            <label class="email" for="email">Email address</label>
+            <div id="error-msg" class="noError">Valid email required</div>
+          </div>
+          <input
+            id="email"
+            type="email"
+            placeholder="email@company.com"
+            class="emailBox"
+            required
+          />
+          <button type="submit" class="button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+        <div class="attribution">
+          Challenge by
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+            >Frontend Mentor</a
+          >. Coded by <a href="#">Your Name Here</a>.
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+÷

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Success</title>
+  </head>
+  <link href="confirmStyle.css" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet"
+  />
+  <body class="successContainer">
+    <div class="success">
+      <img src="./assets/images/icon-success.svg" class="check" />
+      <p class="successHeader">Thanks for subscribing!</p>
+      <p class="successMessage">
+        A confirmation email has been sent to
+        <span id="subscriberEmail"></span>. Please open it and click the button
+        inside to confirm your subscription.
+      </p>
+      <button class="button buttonPosition">Dismiss message</button>
+    </div>
+  </body>
+
+  <script>
+    const loadEmailFromLocalStorage = () => {
+      const subscriberEmail = document.getElementById("subscriberEmail");
+      const email = localStorage.getItem("email") || undefined;
+      subscriberEmail.textContent = email;
+    };
+    window.onload = loadEmailFromLocalStorage;
+  </script>
+</html>

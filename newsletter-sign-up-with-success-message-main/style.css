@@ -1,0 +1,139 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.container {
+  overflow-y: auto;
+}
+.img-desktop {
+  display: none;
+}
+.img-mobile {
+  display: block;
+}
+.content {
+  padding-inline: 1rem;
+}
+.header {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 0px;
+  margin-block: 3rem;
+}
+.message {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  color: #242742;
+  line-height: 24px;
+}
+
+.smallCheck {
+  width: 21px;
+  height: 21px;
+  margin-right: 1rem;
+  list-style: none;
+}
+.option {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.optionText {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #242742;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.email {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  text-align: left;
+  margin-bottom: 1rem;
+}
+.emailBox {
+  height: 56px;
+  border-radius: 0.25rem;
+  border: 1px solid #19182b40;
+  padding-inline: 1rem;
+}
+
+.button {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.5rem;
+  margin-block: 1rem;
+  background: #242742;
+  color: white;
+  cursor: pointer;
+}
+
+.showError {
+  display: block;
+  color: red;
+  font-size: 14px;
+}
+.noError {
+  display: none;
+}
+.error {
+  border: 1px solid red;
+}
+@media only screen and (min-width: 768px) {
+  .mainBody {
+    background: #7b84a1;
+  }
+  .img-desktop {
+    display: block;
+    margin-left: 2rem;
+  }
+  .img-mobile {
+    display: none;
+  }
+  .container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    width: 928px;
+    height: 641px;
+    margin: auto;
+    border-radius: 2rem;
+    padding-inline: 2rem;
+  }
+  .header {
+    font-size: 56px;
+    margin-bottom: 3rem;
+  }
+  .form {
+    margin-top: 2rem;
+  }
+  .button {
+    background: linear-gradient(204.47deg, #ff6a3a 0%, #ff527b 100%);
+    border: none;
+  }
+}
