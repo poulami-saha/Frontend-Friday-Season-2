@@ -19,6 +19,7 @@
 }
 .img-mobile {
   display: block;
+  width: 100%;
 }
 .content {
   padding-inline: 1rem;
