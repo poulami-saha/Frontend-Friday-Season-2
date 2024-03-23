@@ -102,6 +102,7 @@
 }
 .error {
   border: 1px solid red;
+  background: #FF615526;
 }
 @media only screen and (min-width: 768px) {
   .mainBody {
