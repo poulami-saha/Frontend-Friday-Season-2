@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Pod Request Access Landing Page</title>
+  </head>
+
+  <body>
+    <form class="container" id="signUpForm">
+      <img class="backgroundImage" src="./asset/Bitmap.png" />
+      <header class="header">
+        <img src="asset/Hifi.png" class="main-logo" />
+        <p>pod</p>
+      </header>
+      <img src="asset/footer.png" class="footer"/>
+      <div class="tabView">
+        <p class="title">
+          PUBLISH YOUR PODCASTS <span class="title-text">EVERYWHERE</span>
+        </p>
+        <p class="subtitle">
+          Upload your audio to Pod with a single click. We’ll then distribute
+          your podcast to Spotify, Apple Podcasts, Google Podcasts, Pocket Casts
+          and more!
+        </p>
+        <div class="logogroup">
+          <img src="asset/spotify.png" />
+          <img src="asset/apple.png" />
+          <img src="asset/google.png" />
+          <img src="asset/pocket.png" />
+        </div>
+        <span class="emailGroup">
+        <input
+          id="email"
+          type="text"
+          class="email"
+          placeholder="Email address"
+        />
+        <button type="submit" class="button">Request Access</button>
+
+        <p id="error-msg" class="noError">Oops! Please check your email</p>
+        </span>
+       </div> 
+      </div>
+      <img src="asset/footer.png" class="footer"/>
+    </form>
+    <script src="script.js"></script>
+  </body>
+</html>

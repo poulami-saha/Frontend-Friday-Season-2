@@ -1,0 +1,223 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: "Chivo", sans-serif;
+}
+.backgroundImage {
+  display: none;
+}
+.container {
+  background: #121725;
+  height: 100vh;
+  padding-inline: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  font-size: xx-large;
+  justify-content: center;
+  align-items: center;
+}
+.main-logo {
+  height: 56px;
+  width: 56px;
+  margin-inline: 0.75rem;
+}
+.title {
+  font-size: 26px;
+  font-weight: 100;
+  line-height: 38px;
+  color: #54e6af;
+  text-align: center;
+  margin-top: 3rem;
+}
+.title-text {
+  color: white;
+}
+.subtitle {
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 25px;
+  text-align: center;
+  color: #c2cbe5;
+  margin-top: 2rem;
+}
+
+.logogroup {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-block: 2rem;
+}
+.email {
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+  height: 46px;
+  border-radius: 2rem;
+  background: #2c344b;
+  border: none;
+  padding-inline: 2rem;
+  color: white;
+  width: 80%;
+}
+input:focus {
+  outline: none;
+}
+.button {
+  text-align: center;
+  margin-top: 1rem;
+  height: 46px;
+  border-radius: 2rem;
+  border: none;
+  background: #54e6af;
+  width: 100%;
+}
+
+button:hover {
+  background: #b3ffe2;
+  cursor: pointer;
+}
+
+#error-msg {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14.28px;
+  text-align: left;
+  color: #fb3e3e;
+  margin-inline-start: 1rem;
+  margin-top: 0.25rem;
+}
+.noError {
+  display: none;
+}
+.showError {
+  display: block;
+}
+.footer {
+  display: none;
+}
+
+@media only screen and (min-width: 767px) and (max-width: 1023px) {
+  .tabView {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    max-width: 85%;
+    background: #121725;
+    text-align: left;
+    z-index: 2;
+    margin-top: 10rem;
+  }
+  .backgroundImage {
+    display: block;
+    width: 70%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 70%;
+    z-index: 1;
+  }
+  .container {
+    background: #121725;
+    padding-inline: 1rem;
+  }
+  .header {
+    position: absolute;
+    top: 3rem;
+  }
+  .title {
+    font-size: 48px;
+    line-height: 56px;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 28px;
+    text-align: left;
+    margin-right: 12rem;
+  }
+  .logogroup {
+    justify-content: flex-start;
+    gap: 3.5rem;
+  }
+  .button {
+    margin-left: -2rem;
+    padding-inline: 1rem;
+    width: auto;
+  }
+  .email {
+    width: 30%;
+  }
+  .footer {
+    display: block;
+    position: absolute;
+    left: 2rem;
+    bottom: 1rem;
+    z-index: 2;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .tabView {
+    display: block;
+    width: 723px;
+    height: 509px;
+    background: #121725;
+    text-align: left;
+    z-index: 2;
+  }
+  .container {
+    background: #121725;
+    padding-inline: 20rem;
+  }
+  .backgroundImage {
+    display: block;
+    width: 60%;
+    position: absolute;
+    right: 10rem;
+    height: 60%;
+    z-index: 1;
+  }
+  .title {
+    font-size: 52px;
+    line-height: 62px;
+    text-align: left;
+    margin-top: 2rem;
+  }
+  .subtitle {
+    font-size: 18px;
+    font-weight: 00;
+    line-height: 28px;
+    text-align: left;
+    margin-right: 12rem;
+  }
+  .logogroup {
+    justify-content: flex-start;
+    gap: 3.5rem;
+  }
+  .header {
+    justify-content: flex-start;
+    margin-bottom: 10rem;
+  }
+  .button {
+    margin-left: -2rem;
+    padding-inline: 1rem;
+    width: auto;
+  }
+  .email {
+    width: 30%;
+  }
+  .footer {
+    display: block;
+    position: absolute;
+    right: 10rem;
+    bottom: 10rem;
+    z-index: 2;
+  }
+}
