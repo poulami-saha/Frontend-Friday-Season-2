@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  box-sizing: border-box;
+  background-color: #fff4f4;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.view {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  padding-block: 2rem;
+  padding-inline-start: 2rem;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+.description{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.description-1 {
+  font-size: xx-large;
+  color: #ce9898;
+  letter-spacing: 0.75rem;
+  font-weight: 300;
+  margin-block-end: 0.5rem;
+}
+.description-2 {
+  font-size: xx-large;
+  letter-spacing: 0.75rem;
+  color: #423a3a;
+  font-weight: bolder;
+}
+.description-3 {
+  color: #ce9898;
+  margin: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.email-input {
+  width: 80%;
+  padding-block: 1rem;
+  padding-inline: 0.75rem;
+  border: 0px solid hsl(0, 36%, 70%);
+  border-radius: 1.5rem;
+  outline: none !important;
+}
+
+.email-input:focus {
+  outline: none !important;
+  color: #423a3a;
+  background-color: #fff4f4 !important;
+}
+
+.email-input::placeholder {
+  color: hsl(0, 36%, 70%);
+}
+
+.email-input-container {
+  position: relative;
+  display: inline-block;
+  border: 2px solid hsl(0, 36%, 70%);
+  border-radius: 1.5rem;
+  margin-block-end: 0.5rem;
+}
+
+.arrow-icon {
+  position: absolute;
+  top: 50%;
+  right: -2px;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  padding-block: 0.8rem;
+  border-radius: 1.5rem;
+  padding-inline: 1.5rem;
+}
+
+.noError {
+  display: none;
+}
+.showError {
+  color: #f96464;
+  display: block;
+  margin-block-end: 2rem;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 80%;
+}
+.main-img {
+  width: auto;
+}
+@media only screen and (min-width: 768px) {
+  .header {
+    margin-left: 20rem;
+  }
+  .view {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    margin-left: 15rem;
+  }
+  .main-img {
+    height: 100vh;
+  }
+  .content {
+    width: 35rem;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .description-3 {
+    text-align: left;
+    margin-inline: 0px;
+    font-size: 1.5rem;
+    font-weight: light;
+    line-height: 2rem;
+  }
+  .description-1 {
+    font-size: 5rem;
+    font-weight: lighter;
+  }
+  .description-2 {
+    font-size: 5rem;
+    letter-spacing: 1.5rem;
+  }
+  .header {
+    padding-block: 0;
+    padding-inline-start: 0;
+  }
+  .logo{
+    height: 3rem;
+  }
+  .description{
+    align-items: flex-start;
+  }
+}
